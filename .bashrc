@@ -2,9 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-############################CUSTOM############################
-
-X=$(($X + 1))
+############################
+# CUSTOMIZED SECTION
+############################
 
 #Remove Ubuntu Menu Proxy Errors from GVIM
 function gvim () { (/usr/bin/gvim -f "$@" &) }
@@ -15,9 +15,9 @@ alias ccp='~/.scripts/ccp.sh'
 # cse login
 alias cse='ssh -X soal510@login.cse.unsw.edu.au'
 
-
-##############################################################
-
+############################
+# UBUNTU DEFAULT
+############################
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
